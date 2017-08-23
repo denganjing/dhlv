@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel='stylesheet' href='./css/density.css' />
+    <link rel='stylesheet' href='./css/common.css' />
+    <link rel='stylesheet' href='./css/micro.css' />
+    <title>客流智能</title>
+  </head>
+  <body>
+    <div class="title" style="position: fixed;z-index: 98">
+      <div class="search">
+        <div class="search_img"><img src='/imgs/search2.png'/></div>
+        <input type="text" />
+        <div class="cha_img"><img class="" src='/imgs/cha.png'/></div>
+      </div>
+      <img class="speak_img" src='/imgs/speak.png'/>
+    </div>
+    <div class="noresult">
+      <div class='noresulttxt' style="margin: auto;"></div>
+      <div style="margin: auto;color:#5c9fff" class="goto">前往查看东湖景区客流</div>
+    </div>
+    <div class='subnav'><img class='shrink' src='/imgs/shrink.png'>
+      <div></div>
+    </div>
+    <div class="box" style="padding-top:61px">
+      <div class="top_result">
+        <div class="find">
+          <span class="find_word"></span>
+          <span class="result_n"></span>
+          <span class="selectlist">选择景区<img src='/imgs/open.png' style="    width: 20px;    
+    float: right;" /></span>
+        </div>
+      </div>
+      <div class='content'>
+        <div id="map"></div>
+        <div class="all">
+          <div class="all_title">
+             <span class='people'>实时客流Top5景点</span>
+             <span class="time" style="float: right;    color: #cbcfd4;
+    font-size: 12px;"></span>
+          </div>
+          <div id="chartAll"></div>
+        </div>
+      <div class="single">
+        <div class="density">
+          <div class="sub_title">
+            实时人流
+            <span class="time" style="float: right;    color: #cbcfd4;
+    font-size: 12px;"></span>
+          </div>
+          <div id='density'></div>
+        </div>
+        <div class="predict">
+          <div class="sub_title">未来二小时拥堵预测</div>
+          <div id='predict'></div>
+        </div>
+      </div>
+    </div>
+      <div class="queModal">
+        <div class="close"><img class="" src='/imgs/close.png'/></div>
+        <div class="con">
+          <div class="ask">你可以这样问我:</div>
+          <div class="ques">
+            <div>附近环境好的酒店?</div>
+            <div>附近好吃的美食?</div>
+            <div>附近的停车场?</div>
+            <div>湖心岛人多吗?</div>
+          </div>
+        </div>
+        <div class="listening">正在分析...</div>
+        <div class="unknown"></div>
+        <div class="density_none">对不起，小AI只提供<span class='density_click'>东湖绿道</span>相关景点的拥堵预测服务</div>
+        <div class="timeOut">服务器未响应,请检查网络或重试</div>
+        <div id='app'></div>
+        <div id='startRecord'><img src='/imgs/micro.png' class="micro"></img></div>
+      </div>
+    </div>
+    <div class="container"></div>
+    <div class="modal"></div>
+    <script src="/common/jquery.min.js"></script>
+    <script type="text/javascript" src="//webapi.amap.com/maps?v=1.3&key=921cd5ed3b345ef7096eee41578cbd66
+    "></script>
+    <script src="/common/echarts.js"></script>
+    <script src='/common/JSBridge.js'></script>
+    <script src="/dist/density.bundle.js"></script>
+    <script src='/dist/common.bundle.js'></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+html{
+  height: 100%
+}
+body{
+  margin: 0;
+}
+#map{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 100%;
+}
+.amap-logo,.amap-copyright{
+  display: none!important
+}
+.amap-icon img{
+  width: 25px
+}
+.amap-overlays{
+  z-index: 1
+}
+.amap-info-content.amap-info-outer{
+  background: #FFFFFF;
+  box-shadow: 0 0 7px 0 rgba(0,0,0,0.30);
+  border-radius: 6px;
+  margin-left: -20px;
+  padding: 8px 12px;
+  line-height:initial;
+}
+.amap-info-content.amap-info-outer span{
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #5B6066;
+  letter-spacing: 1.05px;
+}
+.amap-overlays .amap-info-close{
+  display:none!important;
+}
+.amap-info-sharp{
+  left: -4px;
+  height: 20px;
+  background: url(http://webapi.amap.com/theme/v1.3/images/amap-info.png) -5px -564px no-repeat;
+}
+.amap-info div:nth-child(2){
+  bottom: 15px!important;
+  left: -2px!important;
+}

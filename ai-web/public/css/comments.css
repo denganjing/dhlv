@@ -1,0 +1,177 @@
+@font-face{
+  font-family: PingFang;
+  src:url(/fonts/PingFang.ttc);
+}
+*{
+  margin:0;padding:0;
+}
+body{
+  font-family: Microsoft YaHei;
+  margin: 20px 0 0 0;
+  background: #F6F6F6;
+}
+.title1{
+  /*position: fixed;*/
+  height: 45px;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+  padding-left: 15px;
+  background: white;
+  z-index: 1
+}
+.gk{
+  display: initial;
+  background: #2F69FF;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0.97px;
+  border-radius: 100px;
+  padding: 2px 15px;
+  line-height: 45px;
+}
+.name{
+  margin-left: 8px;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #5B6066;
+  letter-spacing: -0.33px;
+  line-height: 38px;
+}
+.time{
+  float: right;
+  opacity: 0.5;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #5B6066;
+  letter-spacing: -0.26px;
+  line-height: 38px;
+}
+.text{
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #5B6066;
+  margin-top: 12px;
+  letter-spacing: -0.28px;
+  line-height: 20px;
+}
+.pic{
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+  height: 35px;
+  background: #D7E9FF;
+  width: 35px;
+  border-radius: 50%
+}    
+.highlight{
+  color:#5C9FFF;
+}
+.typing_loader{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-animation: typing 1s linear infinite alternate;
+  -moz-animation: Typing 1s linear infinite alternate;
+  -ms-animation: Typing 1s linear infinite alternate;
+  animation: typing 1s linear infinite alternate;
+  margin: 46px auto; /* Not necessary- its only for layouting*/
+  position: relative;
+  left: -12px;
+}
+@-webkit-keyframes typing{
+  0%{
+    background-color: #66CCCC;
+    box-shadow: 12px 0px 0px 0px rgba(102,204,204,0.2),
+                24px 0px 0px 0px rgba(102,204,204,0.2);
+    }
+  25%{
+    background-color: rgba(102,204,204,0.4);
+    box-shadow: 12px 0px 0px 0px #66CCCC,
+                24px 0px 0px 0px rgba(102,204,204,0.2);
+  }
+  75%{
+    background-color: rgba(102,204,204,0.4);
+    box-shadow: 12px 0px 0px 0px rgba(102,204,204,0.2),
+                24px 0px 0px 0px #66CCCC;
+    }
+}
+
+@-moz-keyframes typing{
+  0%{
+    background-color: #66CCCC;
+    box-shadow: 12px 0px 0px 0px rgba(102,204,204,0.2),
+                24px 0px 0px 0px rgba(102,204,204,0.2);
+    }
+  25%{
+    background-color: rgba(102,204,204,0.4);
+    box-shadow: 12px 0px 0px 0px #66CCCC,
+                24px 0px 0px 0px rgba(102,204,204,0.2);
+  }
+  75%{ 
+    background-color: rgba(102,204,204,0.4);
+    box-shadow: 12px 0px 0px 0px rgba(102,204,204,0.2),
+                24px 0px 0px 0px #66CCCC;
+  }
+}
+
+@keyframes typing{
+  0%{
+    background-color: #66CCCC;
+    box-shadow: 12px 0px 0px 0px rgba(102,204,204,0.2),
+                24px 0px 0px 0px rgba(102,204,204,0.2);
+  }
+  25%{
+    background-color: rgba(102,204,204,0.4);
+    box-shadow: 12px 0px 0px 0px #66CCCC,
+                24px 0px 0px 0px rgba(102,204,204,0.2);
+  }
+  75%{ 
+    background-color: rgba(102,204,204,0.4);
+    box-shadow: 12px 0px 0px 0px rgba(102,204,204,0.2),
+                24px 0px 0px 0px #66CCCC;
+  }
+}
+.loading{
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  display: none
+}
+.loading div{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-animation: typing 1s linear infinite alternate;
+  -moz-animation: Typing 1s linear infinite alternate;
+  -ms-animation: Typing 1s linear infinite alternate;
+  animation: typing 1s linear infinite alternate;
+  margin: 46px auto;
+  position: relative;
+  left: -12px;
+}
+.item{
+  background: #FFFFFF;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.10);
+  padding: 10px 14px;
+}
+.score{
+  margin-left: 48px;
+  margin-top: -13px;
+}
+.talk_detail{
+      position: absolute;
+      -webkit-overflow-scrolling: touch;
+    top: 115px;
+    bottom: 0;
+    left:0;
+    right: 0;
+    overflow: scroll;
+}
+.gk span{
+  margin-left: 5px;
+}
+.score img{
+  width: 12px;
+  margin-right: 3px;
+}

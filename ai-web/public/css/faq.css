@@ -1,0 +1,230 @@
+* {
+  margin:0;
+  padding:0;
+}
+html {
+  font-size: 100px;
+  background-color: #f9f9f9;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.6666px;
+  }
+  .hotlist{top:2.06rem!important;}
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+  ul.hotList{top:2rem!important;}
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+   ul.hotList{top:1.99rem!important;}
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 53.33333px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+  ul.hotList{top:1.93rem!important;}
+}
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 58.67px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 520px) {
+  html {
+    font-size: 69.34px;
+  }
+}
+@media screen and (min-width: 560px) {
+  html {
+    font-size: 74.67px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+  ul.hotList{top:1.82rem!important;}
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.34px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+  ul.hotList{top:1.79rem!important;}
+}
+.title{
+  position: fixed;
+  top:15px;
+  margin-top: 0px;
+}
+.search input{
+  position: absolute;
+  background: transparent;
+}
+li{
+  list-style: none;
+  display: block;
+  background: #FFFFFF;
+  padding: 0.25rem;
+  margin-bottom: 0.2rem;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.15);
+}
+li:last-child{
+  border-bottom:none;
+}
+.listTitle{
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  /*color: #5c9fff;*/
+  letter-spacing: 1.3px;
+}
+li .answer{
+  padding-top: 0.1rem;
+  font-family: PingFangSC-Regular;
+  letter-spacing: -0.33px;
+  color: #4c4d4d;
+  font-size: 14px;
+}
+li span{
+  display: inline-block;
+  font-size: .12rem;
+  color:#ddd;
+  margin-right: .2rem;
+}
+.listQuery{
+    position: absolute;
+    bottom: 1.5rem;
+    top: 65px;
+    overflow: scroll;
+    /*background: #FFFFFF;*/
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
+/*.listQuery h4{
+  font-size: .3rem;
+}
+.listQuery p{
+  font-size: .28rem;
+}*/
+.highlight{
+  color:#5c9fff;
+}
+/*未查询到答案部分*/
+.no_answer_container{
+  font-family: PingFangSC-Regular;
+  display: none;
+  padding-top: 0.3em;
+  /*overflow: hidden;*/
+  background: white;
+}
+
+.msg{
+  font-size: 14px;
+  padding:0 0 .15rem .3rem;
+  border-bottom:1px solid #ddd;
+  color:#5C9FFF;
+}
+.hotList_con{
+
+}
+ul.hotList{
+  position: absolute;
+  bottom: 1.5rem;
+  top: 2.03rem;
+  /*height:500px;*/
+  overflow: hidden;
+  overflow: scroll;
+  /*background: #FFFFFF;*/
+  -webkit-overflow-scrolling: touch;
+}
+/*底部提问部分*/
+.ask_container{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+      padding: 0.2rem;
+      background: #eeeeee;
+          font-size: .28rem;
+    font-family: PingFangSC-Regular;
+    color: #333333;
+}
+.ask_tip{
+  font-size: .36rem;
+  padding-left: .15rem;
+}
+.ask_container input{
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.15);
+  height: .65rem;
+  line-height: .65rem;
+  width:6rem;
+  /*margin-left: .15rem;*/
+  float: left;
+      text-indent: 0.3rem;
+    font-size: .28rem;
+}
+.ask_container button{
+  width: 1.1rem;
+  height: .66rem;
+  line-height: .66rem;
+  background-color: #5c9fff;
+  color:#fff;
+  font-size: .28rem; 
+  /*margin-right: .15rem;*/
+  border:none;
+  border-radius: .04rem;
+  float: left;
+}
+.input_container{
+  /*margin-bottom: .2rem;*/
+  zoom:1;
+}
+.input_container:after{
+  clear: both;
+  content: '';
+  display: block;
+  width:0;
+  height:0;
+  visibility: hidden;
+}
+.submit{
+  position: absolute;
+  top:40%;
+  left:0.8rem;
+  padding: .1rem .5rem;
+  height: .66rem;
+  line-height: .66rem;
+  font-size: .36rem;
+  background: rgba(0, 0, 0, 0.8);
+  color:#fff;
+  border-radius: 4px;
+  display: none;
+}
+.sourcetime{
+      padding-top: 0.2rem;
+    font-family: PingFangSC-Regular;
+    letter-spacing: -0.33px;
+    color: #979ea8;
+    font-size: 12px;
+}

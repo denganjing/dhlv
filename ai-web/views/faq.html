@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel='stylesheet' href='./css/micro.css' />
+    <link rel='stylesheet' href='./css/common.css' />
+    <link rel='stylesheet' href='./css/faq.css' />
+    <title>全部问答</title>
+  </head>
+  <body style="position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;">
+    <div class="title">
+      <div class="search">
+        <div class="search_img"><img src='/imgs/search2.png'/></div>
+        <input type="text" placeholder="搜索客流量/路线/景点/酒店/餐饮/天气等" />
+        <div class="cha_img"><img class="" src='/imgs/cha.png'/></div>
+      </div>
+      <img class="speak_img" src='/imgs/speak.png'/>
+    </div>
+    <div class="container">
+      <ul class="listQuery">
+      </ul>
+      <div class="no_answer_container">
+          <div class="top10_answer">
+            <h2 class="msg"></h2>
+            <ul class="hotList"><li></li>
+            </ul>
+          </div>         
+      </div>
+      <div class="ask_container">
+        <div style="color: #5c9fff;margin-bottom: 0.1rem;">没有找到答案？向小AI反馈吧~</div>
+        <div class="input_container">
+          <input type="text" placeholder="">
+          <button class="askButton">提交</button>
+        </div>
+      </div>
+      <div class="submit_container">
+        <span class="submit">谢谢您的反馈，小AI努力优化中</span>
+      </div>
+    </div>
+    <div class="queModal">
+      <div class="close"><img class="" src='/imgs/close.png'/></div>
+      <div class="con">
+        <div class="ask">你可以这样问我:</div>
+        <div class="ques">
+          <div>附近环境好的酒店?</div>
+          <div>附近好吃的美食?</div>
+          <div>附近的停车场?</div>
+          <div>湖心岛人多吗?</div>
+        </div>
+      </div>
+      <div class="listening">正在分析...</div>
+      <div class="unknown"></div>
+      <div class="timeOut">服务器未响应,请检查网络或重试</div>
+      <div id='app'></div>
+      <div id='startRecord'><img src='/imgs/micro.png' class="micro"></img></div>
+    </div>
+    <script src="/common/jquery.min.js"></script>
+    <script src='/common/JSBridge.js'></script>
+    <script src='/dist/common.bundle.js'></script>
+    <script src='/dist/faq.bundle.js'></script>
+  </body>
+</html>

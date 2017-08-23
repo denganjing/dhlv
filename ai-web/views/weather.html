@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>天气</title>
+    <link rel='stylesheet' href='./css/weather.css' />
+    <link rel='stylesheet' href='./css/micro.css' />
+    <link rel='stylesheet' href='./css/common.css' />
+  </head>
+  <body>
+    <div class="title">
+      <div class="search">
+        <div class="search_img"><img src='/imgs/search2.png'/></div>
+        <input type="text" placeholder="搜索客流量/路线/景点/酒店/餐饮/天气等" />
+        <div class="cha_img"><img class="" src='/imgs/cha.png'/></div>
+      </div>
+      <img class="speak_img" src='/imgs/speak.png'/>
+    </div>
+    <div class="wealist">
+      <div id="clode">
+        <img id="icon" src='' /></i>
+        <span class="clode_2"></span>
+        <p class="clode_3"></p> 
+        <div class="tem">
+          <span class="lefttemp"><img src='/imgs/lowest.png' class="jiantou" />
+            <span>
+              <span class="low">2</span>
+              <img src='/imgs/degree.png' class="sheshidu" />
+            </span>
+          </span>
+          <img src='/imgs/highest.png' class="jiantou" />
+          <span>
+            <span class="high">3</span>
+            <img src='/imgs/degree.png' class="sheshidu" />
+          </span>
+        </div>
+      </div>
+      <div class="detail">
+        <div class="city"></div> 
+        <div class="item">空气质量<span class="qlty"></span></div>       
+        <div class="item">能见度<span class="vis"></span></div>       
+        <div class="item">风力<span class="wind"></span></div>       
+      </div>
+      <div class="days">
+        <div class="weather_title">天气预报</div>
+        <div class="items"></div>
+      </div>
+      <canvas id='myCanvas3' height="125"></canvas>
+      <canvas id='myCanvas4' height="125"></canvas>
+      <canvas id='myCanvas' height="125"></canvas>
+      <canvas id='myCanvas2' height="125"></canvas>
+      <div class="bot"><p class='txt'></p></div>
+    </div>
+    
+   <div class="queModal">
+      <div class="close"><img class="" src='/imgs/close.png'/></div>
+      <div class="con">
+        <div class="ask">你可以这样问我:</div>
+        <div class="ques">
+          <div>附近环境好的酒店?</div>
+          <div>附近好吃的美食?</div>
+          <div>附近的停车场?</div>
+          <div>湖心岛人多吗?</div>
+        </div>
+      </div>
+      <div class="listening">正在分析...</div>
+      <div class="unknown"></div>
+      <div class="density_none">对不起，小AI只提供<span class='density_click'>东湖绿道</span>相关景点的拥堵预测服务</div>
+      <div class="timeOut">服务器未响应,请检查网络或重试</div>
+      <div id='app'></div>
+      <div id='startRecord'><img src='/imgs/micro.png' class="micro">
+      </div>
+    </div>
+    <script src="/common/jquery.min.js"></script>
+    <script src='/common/JSBridge.js'></script>
+    <script src="/dist/weather.bundle.js"></script>
+    <script src='/dist/common.bundle.js'></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>旅游问答</title>
+    <link rel='stylesheet' href='./css/qus.css' />
+    <link rel='stylesheet' href='./css/micro.css' />
+    <link rel='stylesheet' href='./css/common.css' />
+  </head>
+  <body>
+    <div class="title">
+      <div class="search">
+        <div class="search_img"><img src='/imgs/search2.png'/></div>
+        <input type="text" placeholder="搜索客流量/路线/景点/酒店/餐饮/天气等" />
+        <div class="cha_img"><img class="" src='/imgs/cha.png'/></div>
+      </div>
+      <img class="speak_img" src='/imgs/speak.png'/>
+    </div>
+    <div class="content">
+      <div class="content_top">
+        <div class="div_1">
+          <div class="where"></div>
+          <div class="time"></div>
+        </div>
+
+        <div class="div_2">
+          <div class="ans_con"></div>
+        </div>
+      </div>
+      <div class="noAnswer">未能搜寻到匹配的结果，请参考以下热门问题.....</div>
+      <div class="content_bot similar">
+        <div class="questions">其他类似的问题</div>
+        <div class="similarQus"></div>
+      </div>
+      <div class="content_bot hot">
+        <div class="questions">热门问题</div>
+        <div class="hotQus"></div>
+      </div>
+    </div>
+    
+   <div class="queModal">
+      <div class="close"><img class="" src='/imgs/close.png'/></div>
+      <div class="con">
+        <div class="ask">你可以这样问我:</div>
+        <div class="ques">
+          <div>附近环境好的酒店?</div>
+          <div>附近好吃的美食?</div>
+          <div>附近的停车场?</div>
+          <div>湖心岛人多吗?</div>
+        </div>
+      </div>
+      <div class="listening">正在分析...</div>
+      <div class="unknown"></div>
+      <div class="density_none">对不起，小AI只提供<span class='density_click'>东湖绿道</span>相关景点的拥堵预测服务</div>
+      <div class="timeOut">服务器未响应,请检查网络或重试</div>
+      <div id='app'></div>
+      <div id='startRecord'><img src='/imgs/micro.png' class="micro">
+      </div>
+    </div>
+    <script src="/common/jquery.min.js"></script>
+    <script src='/common/JSBridge.js'></script>
+    <script src="/dist/qus.bundle.js"></script>
+    <script src='/dist/common.bundle.js'></script>
+  </body>
+</html>

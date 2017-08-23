@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>楚楚</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
+  <link rel='stylesheet' href='./css/home.css' />
+  <link rel='stylesheet' href='./css/micro.css' />
+</head>
+<body>
+  <div id="root">
+    <div class="title">
+      <div class="search">
+        <div class="search_img"><img src='/imgs/searchicon.png'/></div>
+        <input type="text" placeholder="搜索客流量/路线/景点/酒店/餐饮/天气等" />
+        <div class="cha_img"><img class="" src='/imgs/search_close.png'/></div>
+      </div>
+      <img class="speak_img" src='/imgs/yuyanicon.png'/>
+    </div>
+    <div class="fast_enter">
+      <h2>快速入口</h2>
+      <a href='/filter' class="xingcheng"><img src="/imgs/xingchengicon.png"><div class="enter"><span>行程助手</span><span>定制个性化行程</span></div></a>
+      <a href='/density' class="keliu"><img src="/imgs/keliuicon.png"><div class="enter"><span>客流量查询</span><span>景区客流拥堵预测</span></div></a>
+    </div>
+    <div class='guess'>
+      <h2>猜您想问<span class="huanyihuan">换一换<img src="/imgs/huanyihuanicon.png"></span></h2>
+      <div class="qusContainer">
+        <div class="sk-fading-circle">
+          <div class="sk-circle2 sk-circle"></div>
+          <div class="sk-circle3 sk-circle"></div>
+          <div class="sk-circle4 sk-circle"></div>
+          <div class="sk-circle5 sk-circle"></div>
+          <div class="sk-circle6 sk-circle"></div>
+          <div class="sk-circle7 sk-circle"></div>
+          <div class="sk-circle8 sk-circle"></div>
+          <div class="sk-circle9 sk-circle"></div>
+          <div class="sk-circle10 sk-circle"></div>
+          <div class="sk-circle11 sk-circle"></div>
+          <div class="sk-circle12 sk-circle"></div>
+        </div>
+        <div class="questions">
+          <ul class="quelist_img">
+            <li class="more" name='tuijian'><div class="img_con"><img src="/imgs/tuijianicon.png"></div><span>为您推荐</span><i></i></li>
+            <li class="more" name='baike'><div class="img_con"><img src="/imgs/baikeicon.png"></div><span>绿道百科</span><i></i></li>
+            <li class="more needTop" name='fuwu'><div class="img_con"><img src="/imgs/fuwuicon.png"></div><span>公共服务</span><i></i></li>
+          </ul>
+          <ul class="quelist_txt">
+             <li class="tuijian">
+             </li>
+             <li class="baike">
+             </li>
+             <li class="fuwu">
+             </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="queModal">
+      <div class="close"><img class="" src='/imgs/close.png'/></div>
+      <div class="con">
+        <div class="ask">你可以这样问我:</div>
+        <div class="ques">
+          <div>附近环境好的酒店?</div>
+          <div>附近好吃的美食?</div>
+          <div>附近的停车场?</div>
+          <div>湖心岛人多吗?</div>
+        </div>
+      </div>
+      <div class="listening">正在分析...</div>
+      <div class="unknown"></div>
+      <div class="density_none">对不起，小AI只提供<span class='density_click'>东湖绿道</span>相关景点的拥堵预测服务</div>
+      <div class="timeOut">服务器未响应,请检查网络或重试</div>
+      <div id='app'></div>
+      <div id='startRecord'><img src='/imgs/micro.png' class="micro"></img></div>
+    </div>
+  </div>
+  <script src="/common/jquery.min.js"></script>
+  <script src='/common/JSBridge.js'></script>
+  <script src='/dist/home.bundle.js'></script>
+  <script src='/dist/common.bundle.js'></script>
+</body>
+</html>

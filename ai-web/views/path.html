@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>行程规划</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
+  <link rel='stylesheet' href='./css/common.css' />
+  <link rel='stylesheet' href='./css/micro.css' />
+  <link rel='stylesheet' href='./css/path.css' />
+</head>
+	<body>
+    <div class="title">
+      <div class="search">
+        <div class="search_img"><img src='/imgs/search2.png'/></div>
+        <input type="text" placeholder="搜索客流量/路线/景点/酒店/餐饮/天气等" />
+        <div class="cha_img"><img class="" src='/imgs/cha.png'/></div>
+      </div>
+      <img class="speak_img" src='/imgs/speak.png'/>
+    </div>
+    <div class="map" id="map"></div>
+    <div class="path_con">
+    	<div class="path_title">
+    		<div class="img_con"><img src="/imgs/arror_down.png"></div>
+        <p class="path_msg"></p>
+    		<p class="path_title_p1" style='margin-top: 10px'>起点：<span class="start"></span>终点：<span class="end"></span></p>
+    	</div>
+    	<div class="path_content">
+    		<!-- <p class="path_way">游玩景点:&nbsp;&nbsp;<span></span><p> -->
+    		<div class="line"></div>
+        <div class="sk-fading-circle">
+          <div class="sk-circle2 sk-circle"></div>
+          <div class="sk-circle3 sk-circle"></div>
+          <div class="sk-circle4 sk-circle"></div>
+          <div class="sk-circle5 sk-circle"></div>
+          <div class="sk-circle6 sk-circle"></div>
+          <div class="sk-circle7 sk-circle"></div>
+          <div class="sk-circle8 sk-circle"></div>
+          <div class="sk-circle9 sk-circle"></div>
+          <div class="sk-circle10 sk-circle"></div>
+          <div class="sk-circle11 sk-circle"></div>
+          <div class="sk-circle12 sk-circle"></div>
+        </div>
+    		<ul>
+    		</ul>
+    	</div>
+    </div>
+    <div class="foot_button">
+      <button class="btn2">开始导航</button>
+    </div>
+    <div class="queModal">
+      <div class="close"><img class="" src='/imgs/close.png'/></div>
+      <div class="con">
+        <div class="ask">你可以这样问我:</div>
+        <div class="ques">
+          <div>附近环境好的酒店?</div>
+          <div>附近好吃的美食?</div>
+          <div>附近的停车场?</div>
+          <div>湖心岛人多吗?</div>
+        </div>
+      </div>
+      <div class="listening">正在分析...</div>
+      <div class="unknown">未识别到结果，请重新录入</div>
+      <div class="density_none">对不起，小AI只提供<span class='density_click'>东湖绿道</span>相关景点的拥堵预测服务</div>
+      <div class="timeOut">服务器未响应,请检查网络或重试</div>
+      <div id='app'></div>
+      <div id='startRecord'><img src='/imgs/micro.png' class="micro"></img></div>
+    </div>
+	  <script src="/common/jquery.min.js"></script>
+    <script type="text/javascript" src="//webapi.amap.com/maps?v=1.3&key=921cd5ed3b345ef7096eee41578cbd66
+    "></script>
+    <script src='/common/JSBridge.js'></script>
+    <script src='/dist/path.bundle.js'></script>
+    <script src='/dist/common.bundle.js'></script>
+	</body>
+</html>

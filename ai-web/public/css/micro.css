@@ -1,0 +1,127 @@
+#app{
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+  height: 50px;
+}
+.queModal{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  right: 0px;
+  z-index: 99;
+  display: none;
+  text-align: center;
+}
+.queModal .close{
+  position: absolute;
+  right:15px;
+  top:15px;
+  z-index: 3;
+}
+.queModal .close img{
+  width: 32px;
+}
+.listening{
+  font-family: PingFangSC-Light;
+  font-size: 28px;
+  color: #FFFFFF;
+  letter-spacing: 0.48px;
+  color: white;
+  display: none;
+  margin-top: 50%;
+}
+.timeOut{
+  font-family: PingFangSC-Light;
+  font-size: 28px;
+  color: #FFFFFF;
+  letter-spacing: 0.48px;
+  color: white;
+  display: none;
+  margin-top: 50%;
+}
+.unknown{
+  font-family: PingFangSC-Light;
+  font-size: 20px;
+  letter-spacing: 0.48px;
+  color: white;
+  display: none;
+  margin-top: 50%;
+  padding: 0 50px
+}
+.density_none{
+  font-family: PingFangSC-Light;
+  font-size: 20px;
+  letter-spacing: 0.48px;
+  color:white;
+  margin-top: 48%;
+  padding:5px;
+  display: none;
+}
+.density_click{
+  color:#2F69FF;
+  text-decoration: underline;
+}
+.ask{
+  text-align: center;
+  margin-top: 151px;
+  font-size: 28px;
+  color: white;
+  font-family: PingFangSC-Light;
+}
+@keyframes mymove
+{
+  from {opacity:0;padding-top:150%;}
+  to {opacity:1;padding-top: 12%}
+}
+@-webkit-keyframes mymove
+{
+  from {opacity:0;padding-top:150%;}
+  to {opacity:1;padding-top: 12%}
+}
+@keyframes mymove
+{
+  from {opacity:0;padding-top:150%;}
+  to {opacity:1;padding-top: 3%}
+}
+@-webkit-keyframes mymove
+{
+  from {opacity:0;padding-top:150%;}
+  to {opacity:1;padding-top: 3%}
+}
+.ques{
+  line-height: 27px;
+  font-size: 18px;
+  padding-top: 12%;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  height: 255px;
+  font-family: PingFangSC-Light;
+}
+.ques div{
+  animation:mymove 1s;
+  padding-top: 3%;
+}
+.modal{
+  display: none;
+  width: 100%;
+  font-family: PingFangSC-Light;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.48px;
+  padding-top: 50%;
+}
+/*语音图标*/
+#startRecord{
+  left: calc(50% - 45px)!important;
+  position:absolute;
+  left:40%;
+  bottom:5%;
+}
+.micro{
+  width: 90px!important;
+  height: 90px!important
+}

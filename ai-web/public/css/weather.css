@@ -1,0 +1,442 @@
+html{
+  height: 100%
+}
+body{
+  background-image: url(/imgs/weatherBg.png);
+  background-size: cover;
+  margin: 0;
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+}
+#container{
+  height: 200px
+}
+.bk{
+  width:100%;
+  height:6px;
+  background: #e3e4e6;
+}
+.wealist .wea{
+  width:100%;
+  height:42px;
+}
+.wealist .position{
+  margin-left:9px;
+  margin-top:12px;
+  font-size:12px;
+  color:#9fa0a2;
+  float:left;
+}
+.wealist .position span{
+  font-size: 14px
+}
+.wealist #date{
+  float:right;
+  list-style:none;
+  margin-top:12px;
+  color:#939495;
+  margin-right:20px;
+}
+#clode {
+      /*position: relative;*/
+      /*margin-top: 20px;*/
+      float: left;
+}
+
+#clode #icon_1{
+  font-size:45px;
+  margin: 0 15px 15px 20px;
+  vertical-align: middle;
+}
+#clode .clode_2{
+      line-height: 40px;
+          margin-left: 10px;
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #FFFFFF;
+    letter-spacing: 1.22px;
+}
+#clode .clode_2 .pm{
+  width:25px;
+  height:20px;
+  margin-left:40px;
+  margin-top:-8px;
+}
+#clode .clode_2 .pmzhi{
+  color:#5ca950;
+  font-size:16px;
+}
+#clode .clode_3{
+      position: absolute;
+    font-family: PingFangSC-Thin;
+    color: #FFFFFF;
+    letter-spacing: 5.29px;
+     font-size: 60px; 
+    left: 40px;
+    top: 30px;
+    width: 120px;
+        margin: 0;
+}
+#clode .clode_3 span{
+      font-size: 20px;
+    position: absolute;
+}
+.item_temp span{
+  font-family: PingFangSC-Regular
+    color: #FFFFFF;
+    font-size: 10px;
+    opacity: 0.6;
+    /*letter-spacing: -0.25px;*/
+    padding-top: 10px
+}
+#clode .clode_3 .clode_2ul{
+  list-style:none;
+  font-size:10px;
+}
+#clode .clode_3 .clode_2ul .li_1{
+  margin-top:-15px;
+  font-size: 14px
+}
+#clode .clode_3 .clode_2ul .li_2{
+  color:#c7c8c9;
+  font-size: 14px
+}
+#clode .clode_3 .clode_2ul .li_2 .min{
+  color:#c7c8c9;
+  margin-top:-28px;
+  margin-left:-3px;
+}
+#clode .clode_3 .clode_2ul .li_2 span{
+  display:block;
+  margin-top:-56px;
+  margin-left: 10px;
+  color:#c7c8c9;
+}
+.detail{
+      float: right;
+    /* font-size: 14px; */
+    padding: 8px 0;
+}
+.detail .city{
+    font-family: PingFangSC-Regular;
+    font-size: 17px;
+    color: #FFFFFF;
+    letter-spacing: 1.38px;
+    /* text-align: right; */
+    /*border-bottom: 1px dotted silver;*/
+    /*padding-bottom: 5px;*/
+    width: 140px;
+}
+.detail .item span{
+      float: right;
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #FFFFFF;
+    letter-spacing: 1.22px;
+}
+.detail .item{
+      font-family: PingFangSC-Light;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 1.05px;
+    padding: 8px 0;
+    border-bottom: 1px dotted silver;
+}
+.detail .item:last-child{
+    border-bottom: none
+
+}
+.days #icons{
+  font-size:30px;
+}
+.days .detail_date{
+  color:#9fa0a1;
+  font-size:12px;
+  margin-top:11px;
+}
+.detail_p2{
+  margin-top:48px;
+  color:#aaabac;
+  font-size:14px;
+}
+.detail_p3{
+  margin-top:10px;
+  font-size:10px;
+  color:#858688;
+}
+.bot{
+      position: absolute;
+    /* opacity: 0.59; */
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -0.35px;
+    line-height: 16px;
+    /*top: 450px;*/
+}
+.bot .cloth{
+  width:12.5%;
+  text-align: center;
+  line-height:38px;
+  float:left;
+}
+/*.bot .txt{
+  margin: 8px 15px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #adabab;
+}*/
+.detail_date2{
+  font-weight: 900
+}
+.days .items div div{
+      text-align: center;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-bottom: 2px;
+    letter-spacing: -0.25px;
+}
+.days .detail_min{
+  font-size: 18px;
+  margin-top: 5px
+}
+.days .pe-is-w-mostly-cloudy-1,.detail .pe-is-w-cloud-down-f{color:#66CCCC;}
+.days .pe-is-w-sun-1{color:#66CCCC;}
+.wealist #clode .pe-is-w-sun-1{color:#66CCCC;}
+.wealist #clode .pe-is-w-mostly-cloudy-1,.wealist #clode.pe-is-w-cloud-down-f{color:#66CCCC;}
+
+.micro img{
+  width: 25px;
+  background: black;
+  border-radius: 50%;
+  padding: 10px;
+}
+#app{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+}
+#icon{
+  float: left;
+      width: 40px;
+}
+.wealist{
+      position: absolute;
+    /*top: 80px;*/
+    bottom: 0px;
+    overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+    color: white;
+}
+.days {
+      background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    /*top: 155px;*/
+    height: 295px;
+    width: 100%;
+}
+.days .items{
+  height: 295px;
+      font-family: PingFangSC-Medium;
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: 1.05px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-bottom: 10px;
+    letter-spacing: 1.05px;
+}
+.days .items .item {
+      display: inline-block;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    /* margin: 0 13px; */
+    width: calc((100% - 25px) / 5);
+    height: calc(257px - 20px);
+    padding: 10px 2px;
+    text-align: center;
+}
+.days .items .item:last-child{
+  border-right: none
+}
+.days div img{
+  width:40px;
+}
+.temp .flag{
+      vertical-align: super;
+}
+.gap{
+  display: inline-block;
+    margin: 0 0 0 -8px;
+}
+.line{
+  height: 105px
+}
+#myCanvas,#myCanvas2,#myCanvas3,#myCanvas4{
+      width: 100%;
+      left: 0px;
+      right: 0px;
+    height: 105px;
+    position: absolute;
+    top: 310px;
+    /*bottom: -22px;*/
+}
+.amap-copyright,.amap-logo{
+  display: none!important
+}
+/*.title{
+  margin-top: 20px;
+  width: calc(100% - 50px);
+  position: fixed;
+  left: 0;
+  right: 0;
+  /*margin: 15px 25px;
+  z-index: 1;
+}
+.search{
+      position: relative;
+    height: 35px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.15);
+     margin-bottom: 14px;
+    background: rgba(0,0,0,0.1);
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%);
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+.search input{
+  position: absolute;
+  padding-left: 0px;
+  padding-right: 0px;
+   width: calc(100% - 60px);
+    overflow: scroll;
+    padding-top: 0px;
+padding-bottom: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+left:30px;
+height: 35px;
+  background: transparent;
+    color: white;
+      font-family: PingFangSC-Regular;
+    font-size: 13px;
+    letter-spacing: -0.28px;
+  border:none;
+  border-right:0px;
+}
+.search img{
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  width: 15px
+}
+.cha_img img {
+    right: 10px;
+    top: 10px;
+}
+.search_img img {
+    left: 10px;
+    top: 11px;
+}*/
+.weather_title{
+      font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0.97px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.days .items .temp span{
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+}
+.weather_con{
+  opacity: 0.6;
+font-family: PingFangSC-Light;
+font-size: 12px;
+color: #FFFFFF;
+letter-spacing: 0.97px;
+}
+.tem{
+      position: absolute;
+    top: 110px;
+      font-family: PingFangSC-Light;
+    font-size: 17px;
+    color: #FFFFFF;
+    /*letter-spacing: 1.38px*/
+}
+.tem img{
+  display: inline-block;
+}
+.tem img.jiantou{
+  height: 14px;
+      margin-right: 5px;
+}
+.lefttemp{
+  margin-right: 20px
+}
+.sheshidu{
+      vertical-align: super;
+  width: 7px;
+      
+}
+.du{
+  width: initial!important;
+  display: inline-block;
+  vertical-align: super;
+}
+@media screen and (min-width:320px){
+  .title{
+    width: calc(100% - 30px);
+   /* margin: 15px;*/
+  }
+  .wealist{
+    top: 65px;
+    left:15px;
+    right: 15px;
+  }
+  .days{
+    top: 140px;
+  }
+  .bot{
+    top: 440px;
+  }
+}
+@media screen and (min-width:360px){
+  .title{
+    width: calc(100% - 50px);
+   /* margin: 15px 25px;*/
+  }
+  .wealist{
+    top: 80px;
+    left:25px;
+    right: 25px;
+  }
+  .days{
+    top: 155px;
+  }
+  .bot{
+    top: 460px;
+  }
+}
+@media screen and (min-width:412px){
+  .title{
+    width: calc(100% - 50px);
+   /* margin: 15px 25px;*/
+  }
+  .wealist{
+    top: 80px;
+    left:25px;
+    right: 25px;
+  }
+  .days{
+    top: 155px;
+  }
+  .bot{
+    top: 460px;
+  }
+}
+img.du {
+    width: 7px!important;
+}

@@ -1,0 +1,236 @@
+
+*{
+  margin: 0px;
+  padding: 0px
+}
+@font-face{
+  font-family: PingFang;
+  src:url(/fonts/PingFang.ttc);
+}
+body{
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+}
+.listcontent{
+  display: none;
+}
+.top_result{
+  background: #F6F6F6;
+  position:relative;
+}
+.select{
+  font-size: 16px;
+  color:#5C9FFF;
+  position: absolute;
+  top:15px;
+  right:1%;
+  background:url('/imgs/open.png') no-repeat scroll right center transparent;
+  background-size:20px 20px;
+  padding-right:4px;
+}
+.selectlist{
+  position: relative;
+  width:100%;
+  border-bottom: none;
+}
+.selectlist:after{clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
+
+.selectlist li{
+  float: left;
+  width:100%;
+  display: block;
+  width:100%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-bottom:1px solid #ddd;
+  background:#fff;
+  color:#222;
+}
+.selectlist li:last-child{
+  border-bottom:none;
+}
+/*收缩按钮*/
+.shrink_con{
+  position: fixed;
+  top:105px;
+  right:0;
+  border: 1px solid #ddd;
+  background: white;
+  z-index: 1;
+  display: none;
+}
+.shrink{
+  position: relative;
+  float: right;
+  height: 20px;
+}
+.map{
+  width:100%;
+  background: #F6F6F6;
+  margin-bottom: 10px;
+}
+.top_result .find{
+  font-family: PingFangSC-Regular;
+  color: #5B6066;
+  letter-spacing: 1.3px;
+}
+.top_result .num{
+  color: #5C9FFF;
+  margin-left: -6px;
+}
+.top_result .place{
+  color: #5C9FFF;
+}
+.top_result .highlight{
+  color: #5C9FFF;
+}
+.top_result .sort{
+  float:right;
+  font-size: 12px;
+  color:#5a9fe0;
+  margin-right:5px;
+  margin-top: 10px;
+}
+.content_result{
+  position: absolute;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #F6F6F6;
+}
+.content_result .res_1{
+  position: relative;
+  border: 1px #f1f2f3 solid;
+  margin: 10px;
+  background: #FFFFFF;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.10);
+}
+.top_left{
+  vertical-align: top;
+  display: inline-block;
+}
+.top_left .pic{
+  display: block;
+  width: 140px;
+  margin-right: 8px;
+}
+.top_right{
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  bottom: 0;
+}
+.name{
+  font-family: PingFangSC-Regular;
+  color: #222222;
+  letter-spacing: 1.3px;
+  margin-top: 6px;
+}
+.score{
+  color:#878888;
+}
+.distance{
+  position: absolute;
+  color: #5B6066;
+  bottom: 2px;
+  right: 15px;
+  letter-spacing: 1.05px;
+  font-family: PingFangSC-Regular;
+}
+.distance span{
+  font-family: PingFangSC-Medium;
+  letter-spacing: 1.05px;
+  color: #5C9FFF;
+}
+.qian{
+  position: absolute;
+  font-family: PingFangSC-Regular;
+  color: #F56700;
+  letter-spacing: 1.05px;
+  bottom: 2px;
+}
+.tags{
+  line-height: 16px;
+  color: #5B6066;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.amap-copyright,.amap-logo{
+  display: none!important
+}
+.amap-logo,.amap-copyright{
+  display: none!important
+}
+.amap-icon img{
+  width: 20px
+}
+@media screen and (max-width:325px){
+  .top_result{padding: 5px 15px}
+  .top_result .find{font-size:13px;}
+  #container{height: 120px;}
+  .content_result{top: 219px;}
+  .top_left .pic{height: 90px}
+  .name{font-size: 13px;width:144px;}
+  .tags{font-size: 10px;width:144px;}
+  .qian{font-size: 10px}
+  .distance{font-size: 10px}
+  .score{margin:0}
+  .score img{margin-right: 1px;width: 10px}
+  .select{top:5px;font-size: 10px;padding-right: 20px;}
+  .shrink_con{top:88px;width: 80px;}
+  .selectlist li{height: 30px;line-height: 30px;}
+}
+@media screen and (min-width:360px){
+  .top_result{
+    padding: 15px
+  }
+  .top_result .find{
+    font-size:16px;
+  }
+  #container{height: 150px;}
+  .content_result{top: 269px;}
+  .top_left .pic{height: 110px}
+  .name{font-size: 16px}
+  .tags{font-size: 13px}
+  .qian{font-size: 13px}
+  .distance{font-size: 13px}
+  .score{margin: 5px 0}
+  .score img{margin-right: 3px;width: 12px}
+  .select{top:18px;font-size: 12px;padding-right: 20px;}
+}
+@media screen and (min-width:412px){
+  .top_result{
+    padding: 15px
+  }
+  .top_result .find{
+    font-size:16px;
+  }
+  #container{height: 150px;}
+  .content_result{top: 269px;}
+  .top_left .pic{height: 110px}
+  .name{font-size: 16px}
+  .tags{font-size: 13px}
+  .qian{font-size: 13px}
+  .distance{font-size: 13px}
+  .score{margin: 5px 0}
+  .score img{margin-right: 3px;width: 12px}
+}
+.amap-icon img{
+  width: 20px
+}
+.emptyResult{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 64px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 200px;
+    background: white;
+}

@@ -1,0 +1,141 @@
+@font-face{
+  font-family: PingFang;
+  src:url(/fonts/PingFang.ttc);
+}
+body{
+  font-family: Microsoft YaHei;
+  background: #F6F6F6;
+  margin: 0px;
+}
+.content_top{
+  display: none;
+  background:#f6f6f6;
+}
+.content_top .div_1{
+  background: white;
+  padding-top: 15px;
+}
+.content_top .div_1 .where{
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #222222;
+  letter-spacing: 1.3px;
+  /*margin-top:13px;*/
+  /*margin-left:15px;*/
+      padding: 0 14px;
+}
+.content_top .div_1 .time{
+  opacity: 0.69;
+  font-family: PingFangSC-Regular;
+  letter-spacing: -0.24px;
+  font-size: 11px;
+  color: #c2c3c4;
+      padding: 0 14px;
+  /*padding-top: 3px;
+  padding-left: 15px;*/
+}
+.content_top .div_1 .cred{
+  font-size:12px;
+  color:#646565;
+  margin-top:14px;
+  margin-left:8px;
+}
+.content_top .div_2{
+  padding:0 14px;
+  background: #FFFFFF;
+ /* box-shadow: 0 0 4px 0 rgba(0,0,0,0.10);*/
+}
+.content_top .div_2 .ans_con{
+  padding: 10px 0 15px;
+  font-family: PingFangSC-Regular;
+  letter-spacing: -0.33px;
+  color: #4c4d4d;
+  font-size: 14px;
+  text-align: justify;
+}
+.content_bot{
+  display: none
+}
+.content_bot .questions{
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #222222;
+  letter-spacing: 1.3px;
+  padding: 14px;
+  border-bottom: 1px #f8f9fa solid;
+}
+.que{
+  font-family: PingFangSC-Regular;
+  color: #5B6066;
+  letter-spacing: -0.33px;
+  padding: 10px 14px;
+}
+.content_bot div{
+  border-bottom: 1px #f2f5f4  solid;
+}
+.amap-copyright,.amap-logo{
+  display: none!important
+}
+.content{
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+}
+.content_bot{
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.10);
+  margin-top: 10px;
+  background: white
+}
+.similarQus{
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.similarQus div:last-child{
+  border-bottom: none
+}
+.noAnswer{
+  display: none;
+  font-family: PingFangSC-Regular;
+    /*font-size: 14px;*/
+    padding: 5px 15px;
+    color: #5C9FFF;
+    letter-spacing: -0.3px;
+    /* top: 10px; */
+    line-height: 38px;
+    background: white;
+}
+@media screen and (min-width:320px){
+  .noAnswer{
+    font-size: 12px;
+  }
+  .que{
+    font-size: 13px
+  }
+}
+@media screen and (min-width:360px){
+  .noAnswer{
+    font-size: 14px;
+  }
+  .que{
+    font-size: 15px
+  }
+}
+@media screen and (min-width:412px){
+  .noAnswer{
+    font-size: 14px;
+  }
+  .que{
+    font-size: 15px
+  }
+}
+
+.txt{
+  opacity: 0.69;
+  font-family: PingFangSC-Regular;
+  letter-spacing: 1.3px;
+  font-size: 11px;
+  color: #c2c3c4;
+  padding-top: 13px;
+  margin-left: 15px;
+}
